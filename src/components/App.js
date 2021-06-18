@@ -30,6 +30,7 @@ class App extends React.Component {
     //         movies:newMovieList
     //     })
     // }
+    
 
     //FETCH API    
     // deleteMovie = async (movie) =>{
