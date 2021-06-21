@@ -3,8 +3,7 @@ import SearchBar from './Searchbar';
 import MovieList from './MovieList';
 import AddMovie from './AddMovie';
 import axios from 'axios';
-// require('dotenv').config();
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 class App extends React.Component {
@@ -12,6 +11,14 @@ class App extends React.Component {
     state = {
         movies: [],
         searchQuery: ""
+    }
+
+    
+    addMovie = async (movie) => {
+        await axios.post("http://localhost:3002/movies/", movie)
+        this.setState(state => ({
+            movies:state.movies.concat([movie])
+        }))
     }
 
 
@@ -43,7 +50,10 @@ class App extends React.Component {
             movie => {
                 return movie.title.toLowerCase().indexOf(this.state.searchQuery.toLowerCase()) !== -1
             }
-        )
+        ).sort((a,b) => {
+            return a.id < b.id ? 1 : a.id > b.id ? -1 : 0;
+        })
+
         return (
             <Router>
                 <div className="container">
@@ -62,11 +72,17 @@ class App extends React.Component {
                             />
                         </React.Fragment>
                     )}>
-
                     </Route>
 
-                    <Route path="/add" component={AddMovie} />
-
+                    <Route path="/add" render={({history}) => (
+                        <AddMovie
+                            onAddMovie = { (movie) => {
+                                this.addMovie(movie)
+                                history.push('/')}                        
+                            }
+                        />
+                    )}>                       
+                    </Route>
 
                 </div>
             </Router>
