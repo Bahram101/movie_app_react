@@ -22,53 +22,25 @@
       "imageURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qHCZ6LjtmqWDfXXN28TlIC9OppK.jpg"
     },
     {
-      "id": 12,
-      "title": "Blitz 007",
-      "rating": "11",
+      "title": "Blitz",
+      "rating": "10",
+      "imageURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qCPMjT8Ld8tvs1zs7LY2jpKlRIK.jpg",
       "overview": "hacker who joins a group of underground insurgents hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth. fighting the vast and powerful computers who now rule the earth.Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth. ",
-      "imageURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qCPMjT8Ld8tvs1zs7LY2jpKlRIK.jpg"
+      "id": 12
     },
     {
-      "title": "titl",
-      "rating": "2345",
+      "title": "title",
+      "rating": "8.7",
       "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
       "overview": "overview",
       "id": 13
     },
     {
-      "title": "Lupin ",
+      "title": "Lupin",
       "rating": "7.9",
       "imageURL": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sgxawbFB5Vi5OkPWQLNfl3dvkNJ.jpg",
-      "overview": "asdf",
+      "overview": "asdfddddddddd",
       "id": 14
-    },
-    {
-      "title": "film7",
-      "rating": "4.5",
-      "imageURL": "asdf",
-      "overview": "asdf",
-      "id": 15
-    },
-    {
-      "title": "fim8",
-      "rating": "65",
-      "imageURL": "asdf",
-      "overview": "overview\n",
-      "id": 16
-    },
-    {
-      "title": "film9",
-      "rating": "4.9",
-      "imageURL": "image",
-      "overview": "overview",
-      "id": 17
-    },
-    {
-      "title": "film10",
-      "rating": "9",
-      "imageURL": "asdf",
-      "overview": "asdf",
-      "id": 18
     }
   ]
 }
